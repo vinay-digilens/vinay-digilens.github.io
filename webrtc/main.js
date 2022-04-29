@@ -11,10 +11,10 @@ async function callUser() {
   const stream = await navigator.mediaDevices.getUserMedia({
     "video": {
         "width": {
-            "exact": 1280
+            "exact": 720
         },
         "height": {
-            "exact": 720
+            "exact": 1280
         }
     },
     audio: true,
