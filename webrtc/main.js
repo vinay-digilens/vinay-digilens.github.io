@@ -9,7 +9,14 @@ async function callUser() {
   const peerId = document.querySelector("input").value;
 // grab the camera and mic
   const stream = await navigator.mediaDevices.getUserMedia({
-    video: true,
+    "video": {
+        "width": {
+            "exact": 1280
+        },
+        "height": {
+            "exact": 720
+        }
+    },
     audio: true,
   });
 // switch to the video call and play the camera preview
