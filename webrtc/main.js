@@ -10,8 +10,8 @@ async function callUser() {
 // grab the camera and mic
   const stream = await navigator.mediaDevices.getUserMedia({
     "video": {
-        "width": {"exact": 640},
-        "height": {"exact": 360}
+        "width": {"exact": 1280},
+        "height": {"exact": 720}
     },
     audio: true,
   });
